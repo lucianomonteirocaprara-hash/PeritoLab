@@ -70,7 +70,7 @@ class MetadataController extends Controller
         }
 
         if (!function_exists('exif_read_data')) {
-            $meta['fields']['EXIF'] = 'Extensão EXIF não disponível';
+            $meta['fields']['EXIF'] = 'Este arquivo não contém informações EXIF.';
             return;
         }
 
